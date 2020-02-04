@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySms">
+
+    <EditText
+        android:id="@+id/txtMensaje"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="El precio del dolar para hoy es de "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensaje"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMensaje"
+        app:layout_constraintStart_toStartOf="@+id/txtMensaje"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/txtMensaje"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensaje"
+        app:srcCompat="@drawable/icons8_contacts_24px" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="131dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:drawableRight="@drawable/icons8_play_24px"
+        android:text="Enviar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContacto" />
+
+    <TextView
+        android:id="@+id/txtContacto"
+        android:layout_width="227dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
+        android:text="No ha seleccionado ningún contacto"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/btnContactos"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensaje" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
